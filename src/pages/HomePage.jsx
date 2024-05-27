@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 const HomePage = () => {
   return (
-      <div className='bg-black min-h-screen'>
+      <div className='bg-slate-800 min-h-screen'>
           
     </div>
   )
