@@ -1,8 +1,11 @@
 import React from 'react'
+import FormValidation from '../components/FormValidation'
 
 const FormPage = () => {
   return (
-    <div>FormPage</div>
+      <div className='bg-slate-800 min-h-[calc(100vh-60px)]'>
+          <FormValidation/>
+    </div>
   )
 }
 
