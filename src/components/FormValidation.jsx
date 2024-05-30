@@ -73,13 +73,16 @@ const HomePage = () => {
   };
   return (
     <>
-      <div className="container xl:max-w-[1164px] mx-auto px-3 pt-9">
+      <div className="container xl:max-w-[1032px] mx-auto px-4 pt-9">
         <form
           className="left-0 flex flex-col items-center justify-center w-full gap-4"
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col w-full gap-1">
-            <label htmlFor="name" className="text-2xl font-medium text-red-100">
+            <label
+              htmlFor="name"
+              className="text-xl font-medium text-black"
+            >
               Name :
             </label>
             <input
@@ -88,7 +91,7 @@ const HomePage = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 bg-white rounded-lg"
+              className="w-full p-2 text-lg bg-white border-[2px] border-black rounded-lg"
             />
             {formErrors.name && (
               <p className="text-lg font-normal text-red-500">
@@ -99,7 +102,7 @@ const HomePage = () => {
           <div className="flex flex-col w-full gap-1">
             <label
               htmlFor="number"
-              className="text-2xl font-medium text-red-100"
+              className="text-xl font-medium text-black"
             >
               Number:
             </label>
@@ -109,7 +112,7 @@ const HomePage = () => {
               name="number"
               value={formData.number}
               onChange={handleChange}
-              className={`p-2 w-full rounded-lg bg-white ${
+              className={`p-2 w-full rounded-lg text-lg bg-white border-[2px] border-black  ${
                 formErrors.number ? "error" : ""
               }`}
               maxLength={10}
@@ -123,7 +126,7 @@ const HomePage = () => {
           <div className="flex flex-col w-full gap-1">
             <label
               htmlFor="password"
-              className="text-2xl font-medium text-red-100"
+              className="text-xl font-medium text-black"
             >
               Password:
             </label>
@@ -135,7 +138,7 @@ const HomePage = () => {
               onChange={handleChange}
               className={`${
                 formErrors.password ? "error" : ""
-              } w-full p-2 rounded-lg bg-white`}
+              } w-full p-2 rounded-lg text-lg bg-white border-[2px] border-black`}
             />
             {formErrors.password && (
               <p className="text-lg font-normal text-red-500">
@@ -146,7 +149,7 @@ const HomePage = () => {
           <div className="flex flex-col w-full gap-1">
             <label
               htmlFor="confirmPassword"
-              className="text-2xl font-medium text-red-100"
+              className="text-xl font-medium text-black"
             >
               Confirm Password:
             </label>
@@ -158,7 +161,7 @@ const HomePage = () => {
               onChange={handleChange}
               className={`${
                 formErrors.confirmPassword ? "error" : ""
-              } w-full p-2 rounded-lg bg-white`}
+              } w-full p-2 rounded-lg text-lg bg-white border-[2px] border-black`}
             />
             {formErrors.confirmPassword && (
               <p className="text-lg font-normal text-red-500">
@@ -166,7 +169,10 @@ const HomePage = () => {
               </p>
             )}
           </div>
-          <button type="submit" className="px-4 py-2 bg-red-200 rounded-lg">
+          <button
+            type="submit"
+            className="px-4 py-2 text-lg text-white rounded-lg bg-Christine"
+          >
             Submit
           </button>
         </form>
@@ -179,7 +185,7 @@ const HomePage = () => {
             </p>
             <button
               onClick={handlePopupClose}
-              className="px-4 py-2 text-center text-black bg-red-200 rounded-lg mt-7"
+              className="px-4 py-2 text-center text-white rounded-lg bg-Christine mt-7"
             >
               Close
             </button>

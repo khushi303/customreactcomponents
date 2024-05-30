@@ -6,12 +6,14 @@ const Navbar = () => {
   const location = useLocation();
   return (
     <>
-      <div className="bg-white">
-        <div
-          className={`fixed top-0 bottom-0 min-h-screen z-50 lg:w-[256px] sm:w-[180px] w-[60px] transition-all duration-300 ease-linear bg-white left-0`}
-        >
-          <h2 className="hidden pl-4 my-10 font-bold lg:text-2xl sm:text-xl lg:pl-7 sm:block">My Dashboard</h2>
-          <div className="relative z-50 flex flex-col w-full h-full gap-5 mt-4">
+      <div
+        className={` z-50 content lg:w-[256px] sm:w-[180px] w-[60px] transition-all duration-300 ease-linear h-screen overflow-y-scroll bg-white`}
+      >
+        <h2 className="hidden pl-4 font-bold py-7 lg:text-2xl sm:text-xl lg:pl-7 sm:block">
+          My Dashboard
+        </h2>
+        <div className="">
+          <div className="relative z-50 flex flex-col w-full gap-5 pt-2">
             {navTabs.map((value, index) => (
               <Link
                 key={index}

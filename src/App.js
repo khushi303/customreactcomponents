@@ -11,8 +11,8 @@ import DashboardHeader from './components/DashboardHeader';
 
 function App() {
   return (
-    <div className='bg-[#F5F5F5]'>
-      <Navbar />
+    <div className='bg-[#F5F5F5] max-w-[1920px] mx-auto relative'>
+      
       <Routes>
         <Route path='/' exact element={<HomePage />}></Route>
         <Route path='/Form' exact element={<FormPage />}></Route>
